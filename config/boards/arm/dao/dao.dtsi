@@ -11,7 +11,7 @@
 
 
 / {
-	model = "dao";
+	model = "Dao";
 	compatible = "dao";
 
 	chosen {
@@ -70,6 +70,7 @@
 			, <&gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
 			;
 	};
+
     leds {
         compatible = "gpio-leds";
         blue_led: led_0 {
@@ -107,7 +108,6 @@
 &usbd {
 	status = "okay";
 };
-
 
 &flash0 {
 	/*

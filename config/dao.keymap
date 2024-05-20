@@ -49,10 +49,10 @@
 
         pc_layer {
             bindings = <
-&trans   &trans          &trans  &kp LG(N9)        &mt LG(KP_NUMBER_5) LC(LS(T))  &kp LG(N5)  &trans  &trans  &trans  &trans  &trans  &trans
-&kp TAB  &kp LA(TAB)     &trans  &trans            &kp CAPS                       &kp LG(N8)  &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp LEFT_SHIFT  &trans  &kp K_CALCULATOR  &kp LG(K)                      &kp DELETE  &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans            &trans                         &trans      &trans  &trans  &trans
+&trans   &kp LG(NUMBER_3)  &kp LG(N0)   &kp LG(N9)        &mt LG(KP_NUMBER_5) LC(LS(T))  &kp LG(N5)  &trans  &trans  &trans  &trans  &trans  &trans
+&kp TAB  &kp LG(N7)        &kp LA(TAB)  &kp LG(R)         &kp CAPS                       &kp LG(N8)  &trans  &trans  &trans  &trans  &trans  &trans
+&trans   &kp LEFT_SHIFT    &trans       &kp K_CALCULATOR  &kp LG(K)                      &kp DELETE  &trans  &trans  &trans  &trans  &trans  &trans
+                                        &trans            &trans                         &trans      &trans  &trans  &trans
             >;
         };
 

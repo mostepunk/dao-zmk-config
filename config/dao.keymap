@@ -29,9 +29,9 @@
     combos {
         compatible = "zmk,combos";
 
-        AS-Esc {
-            bindings = <&kp ESC>;
-            key-positions = <13 12>;
+        as_ESC {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 14>;
         };
     };
 

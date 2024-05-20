@@ -49,10 +49,10 @@
 
         pc_layer {
             bindings = <
-&trans   &kp LG(NUMBER_3)  &kp LG(N0)   &kp LG(N9)        &mt LG(KP_NUMBER_5) LC(LS(T))  &kp LG(N5)  &trans                           &trans              &trans              &trans         &trans           &trans
-&kp TAB  &kp LG(N7)        &kp LA(TAB)  &kp LG(R)         &kp CAPS                       &kp LG(N8)  &mt HOME LEFT                    &mt PAGE_DOWN DOWN  &mt PG_UP UP_ARROW  &mt END RIGHT  &trans           &trans
-&trans   &kp LEFT_SHIFT    &trans       &kp K_CALCULATOR  &kp LG(K)                      &kp DELETE  &mt LC(PRINTSCREEN) PRINTSCREEN  &trans              &trans              &trans         &kp RIGHT_SHIFT  &trans
-                                        &trans            &trans                         &trans      &trans                           &trans              &trans
+&trans   &kp LG(NUMBER_3)  &kp LG(N0)   &kp LG(N9)        &mt LG(KP_NUMBER_5) LC(LS(T))  &kp LG(N5)  &trans                           &trans                    &trans                   &trans           &trans           &trans
+&kp TAB  &kp LG(N7)        &kp LA(TAB)  &kp LG(R)         &kp CAPS                       &kp LG(N8)  &mt HOME LEFT                    &mt PAGE_DOWN DOWN        &mt PG_UP UP_ARROW       &mt END RIGHT    &trans           &trans
+&trans   &kp LEFT_SHIFT    &trans       &kp K_CALCULATOR  &kp LG(K)                      &kp DELETE  &mt LC(PRINTSCREEN) PRINTSCREEN  &mt K_MUTE C_VOLUME_DOWN  &mt K_STOP K_PLAY_PAUSE  &kp C_VOLUME_UP  &kp RIGHT_SHIFT  &trans
+                                        &trans            &trans                         &kp LCTRL   &kp RIGHT_ALT                    &trans                    &trans
             >;
         };
 

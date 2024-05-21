@@ -33,6 +33,16 @@
             bindings = <&kp ESCAPE>;
             key-positions = <13 14>;
         };
+
+        bootLeft {
+            bindings = <&bootloader>;
+            key-positions = <38 37 36>;
+        };
+
+        bootRight {
+            bindings = <&bootloader>;
+            key-positions = <39 40 41>;
+        };
     };
 
     keymap {
@@ -58,10 +68,10 @@
 
         excl {
             bindings = <
-&mt LGUI F1     &kp F2    &kp F3  &kp F4    &kp F5    &kp F6     &kp F7     &kp F8    &kp F9     &kp F10   &kp F11   &kp F12
-&mt LCTRL PLUS  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR  &mt RCTRL MINUS
-&mt LALT EQUAL  &kp N1    &kp N2  &kp N3    &kp N4    &kp N5     &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp RALT
-                                  &trans    &mo 3     &trans     &trans     &trans    &lt 3 DEL
+&mt LGUI F1     &kp F2                   &kp F3  &mt LA(F4) F4  &kp F5    &kp F6     &kp F7     &kp F8    &kp F9     &kp F10   &kp F11            &kp F12
+&mt LCTRL PLUS  &kp EXCL                 &kp AT  &kp HASH       &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR           &kp MINUS
+&mt LALT EQUAL  &mt LEFT_SHIFT NUMBER_1  &kp N2  &kp N3         &kp N4    &kp N5     &kp N6     &kp N7    &kp N8     &kp N9    &mt LEFT_SHIFT N0  &kp RALT
+                                                 &trans         &mo 3     &trans     &trans     &trans    &lt 3 DEL
             >;
         };
 

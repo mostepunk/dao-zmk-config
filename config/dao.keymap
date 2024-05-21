@@ -52,7 +52,7 @@
 &trans   &kp LG(NUMBER_3)  &kp LG(N0)    &kp LG(N9)        &mt LC(LS(T)) LG(N5)  &kp LG(N4)  &trans                           &trans                    &trans                   &trans           &trans           &trans
 &kp TAB  &kp LG(N7)        &kp LEFT_ALT  &kp LG(R)         &kp CAPS              &kp LG(N8)  &mt HOME LEFT                    &mt PAGE_DOWN DOWN        &mt PG_UP UP_ARROW       &mt END RIGHT    &trans           &trans
 &trans   &kp LEFT_SHIFT    &trans        &kp K_CALCULATOR  &kp LG(K)             &kp DELETE  &mt LC(PRINTSCREEN) PRINTSCREEN  &mt K_MUTE C_VOLUME_DOWN  &mt K_STOP K_PLAY_PAUSE  &kp C_VOLUME_UP  &kp RIGHT_SHIFT  &trans
-                                         &trans            &trans                &kp LCTRL   &kp RIGHT_ALT                    &trans                    &trans
+                                         &trans            &trans                &kp LCTRL   &kp RIGHT_ALT                    &lt 3 K_COPY              &trans
             >;
         };
 
@@ -67,7 +67,7 @@
 
         adjust_layer {
             bindings = <
-&bootloader  &tog 1        &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
+&bootloader  &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &bootloader
 &bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
 &sys_reset   &none         &none         &none         &none         &none         &none         &none         &none         &none         &none         &sys_reset
                                          &trans        &none         &trans        &none         &trans        &trans

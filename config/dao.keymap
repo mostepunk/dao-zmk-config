@@ -93,7 +93,7 @@
 
         pc_layer {
             bindings = <
-&trans   &kp LG(NUMBER_3)  &kp LG(N0)    &kp LG(N9)        &mt LC(LS(T)) LG(N5)  &kp LG(N4)       &trans                           &mkp MB1                  &mkp MB2                 &trans           &trans           &trans
+&to 4    &kp LG(NUMBER_3)  &kp LG(N0)    &kp LG(N9)        &mt LC(LS(T)) LG(N5)  &kp LG(N4)       &trans                           &mkp MB1                  &mkp MB2                 &trans           &trans           &trans
 &kp TAB  &kp LG(N7)        &kp LEFT_ALT  &kp LG(R)         &kp CAPS              &kp LG(N8)       &mt HOME LEFT                    &mt PAGE_DOWN DOWN        &mt PG_UP UP_ARROW       &mt END RIGHT    &trans           &trans
 &trans   &kp LEFT_SHIFT    &trans        &kp K_CALCULATOR  &kp LG(K)             &mt LS(DEL) DEL  &mt LC(PRINTSCREEN) PRINTSCREEN  &mt K_MUTE C_VOLUME_DOWN  &mt K_STOP K_PLAY_PAUSE  &kp C_VOLUME_UP  &kp RIGHT_SHIFT  &trans
                                          &trans            &trans                &kp LCTRL        &kp RIGHT_ALT                    &mo 3                     &trans
@@ -118,12 +118,12 @@
             >;
         };
 
-        hz {
+        numpad {
             bindings = <
-&mt LGUI KP_NUM  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9       &kp KP_MINUS  &kp C_VOL_UP  &kp HOME  &kp PSCRN  &kp PG_UP  &kp SLCK         &kp CLCK
-&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6       &kp KP_PLUS   &kp C_MUTE    &kp LEFT  &kp UP     &kp RIGHT  &kp INS          &mt RCTRL K_APP
-&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3       &kp KP_DOT    &kp C_VOL_DN  &kp END   &kp DOWN   &kp PG_DN  &kp PAUSE_BREAK  &kp RALT
-                                             &trans     &lt 3 NUMBER_7  &trans        &trans        &trans    &trans
+&kp KP_NUM       &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE
+&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &trans  &trans  &trans  &trans  &trans  &trans
+&kp LALT         &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &trans  &trans  &trans  &trans  &trans  &trans
+                                             &trans     &to 0      &trans        &trans  &trans  &trans
             >;
         };
     };

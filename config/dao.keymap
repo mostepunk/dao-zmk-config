@@ -98,9 +98,9 @@
 
         pc_layer {
             bindings = <
-&to 4    &kp LG(NUMBER_3)  &kp LG(N0)    &kp LG(N9)        &mt LC(LS(T)) LG(N5)  &kp LG(N4)       &trans                           &mkp MB1                  &mkp MB2                 &trans           &trans           &trans
-&kp TAB  &kp LG(N7)        &kp LEFT_ALT  &kp LG(R)         &kp CAPS              &kp LG(N8)       &mt HOME LEFT                    &mt PAGE_DOWN DOWN        &mt PG_UP UP_ARROW       &mt END RIGHT    &trans           &trans
-&trans   &kp LEFT_SHIFT    &trans        &kp K_CALCULATOR  &kp LG(K)             &mt LS(DEL) DEL  &mt LC(PRINTSCREEN) PRINTSCREEN  &mt K_MUTE C_VOLUME_DOWN  &mt K_STOP K_PLAY_PAUSE  &kp C_VOLUME_UP  &kp RIGHT_SHIFT  &trans
+&to 4    &kp LG(NUMBER_3)  &kp LG(N0)    &kp LG(N9)        &mt LC(LS(T)) LG(N5)  &kp LG(N4)       &kp LC(PG_UP)                    &mkp MB1                  &mkp MB2                 &kp LC(PAGE_DOWN)  &trans           &trans
+&kp TAB  &kp LG(N7)        &kp LEFT_ALT  &kp LG(R)         &kp CAPS              &kp LG(N8)       &mt HOME LEFT                    &mt PAGE_DOWN DOWN        &mt PG_UP UP_ARROW       &mt END RIGHT      &trans           &trans
+&trans   &kp LEFT_SHIFT    &trans        &kp K_CALCULATOR  &kp LG(K)             &mt LS(DEL) DEL  &mt LC(PRINTSCREEN) PRINTSCREEN  &mt K_MUTE C_VOLUME_DOWN  &mt K_STOP K_PLAY_PAUSE  &kp C_VOLUME_UP    &kp RIGHT_SHIFT  &trans
                                          &trans            &trans                &kp LCTRL        &kp RIGHT_ALT                    &mo 3                     &trans
             >;
         };
@@ -129,6 +129,15 @@
 &mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS   &trans  &trans  &trans  &trans  &trans  &trans
 &none            &kp N0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT    &trans  &trans  &trans  &trans  &trans  &trans
                                                 &trans        &to 0         &trans        &trans  &trans  &trans
+            >;
+        };
+
+        game_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };

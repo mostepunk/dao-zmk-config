@@ -90,11 +90,11 @@
             label = "VIM_NEXT_TAB";
         };
 
-        vim_prev_tab: vim_next_tab {
+        vim_prev_tab: vim_prev_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(T) &kp LS(T)>;
-            label = "VIM_NEXT_TAB";
+            label = "VIM_PREV_TAB";
         };
     };
 

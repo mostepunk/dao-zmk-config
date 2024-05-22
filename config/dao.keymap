@@ -82,6 +82,20 @@
             bindings = <&kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT_ARROW>;
             label = "BRACES";
         };
+
+        vim_next_tab: vim_next_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp T>;
+            label = "VIM_NEXT_TAB";
+        };
+
+        vim_prev_tab: vim_next_tab {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp LS(T)>;
+            label = "VIM_NEXT_TAB";
+        };
     };
 
     keymap {
@@ -116,10 +130,10 @@
 
         adjust_layer {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_SEL 4               &bt BT_SEL 3                          &bt BT_SEL 2                    &bt BT_SEL 1                 &bt BT_SEL 0  &bt BT_CLR
-&tog 3      &trans        &trans        &trans        &trans        &trans        &mt LS(HOME) LS(LC(LEFT))  &mt LS(PAGE_DOWN) LS(LC(DOWN_ARROW))  &mt LS(PG_UP) LS(LC(UP_ARROW))  &mt LS(PG_UP) LS(LC(RIGHT))  &braces       &double_quotes
-&none       &trans        &trans        &trans        &trans        &trans        &trans                     &trans                                &trans                          &trans                       &trans        &trans
-                                        &trans        &trans        &trans        &trans                     &trans                                &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &vim_prev_tab  &vim_next_tab  &bt BT_SEL 4               &bt BT_SEL 3                          &bt BT_SEL 2                    &bt BT_SEL 1                 &bt BT_SEL 0  &bt BT_CLR
+&tog 3      &trans        &trans        &trans        &trans         &trans         &mt LS(HOME) LS(LC(LEFT))  &mt LS(PAGE_DOWN) LS(LC(DOWN_ARROW))  &mt LS(PG_UP) LS(LC(UP_ARROW))  &mt LS(PG_UP) LS(LC(RIGHT))  &braces       &double_quotes
+&none       &trans        &trans        &trans        &trans         &trans         &trans                     &trans                                &trans                          &trans                       &trans        &trans
+                                        &trans        &trans         &trans         &trans                     &trans                                &trans
             >;
         };
 

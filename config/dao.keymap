@@ -112,26 +112,26 @@
 
         pc_layer {
             bindings = <
-&to 4    &kp LG(Q)       &kp LG(W)     &kp LG(E)  &mt LC(LS(T)) LG(R)  &kp LG(T)        &kp LC(PG_UP)                    &mkp MB1                  &mkp MB2                 &kp LC(PAGE_DOWN)  &trans           &trans
-&kp TAB  &kp LG(A)       &kp LEFT_ALT  &kp LG(D)  &kp CAPS             &kp LG(G)        &mt HOME LEFT                    &mt PAGE_DOWN DOWN        &mt PG_UP UP_ARROW       &mt END RIGHT      &trans           &trans
-&trans   &kp LEFT_SHIFT  &kp LG(X)     &kp LG(C)  &kp LG(V)            &mt LS(DEL) DEL  &mt LC(PRINTSCREEN) PRINTSCREEN  &mt K_MUTE C_VOLUME_DOWN  &mt K_STOP K_PLAY_PAUSE  &kp C_VOLUME_UP    &kp RIGHT_SHIFT  &trans
-                                       &trans     &trans               &kp LCTRL        &kp RIGHT_ALT                    &mo 3                     &trans
+&to 4    &kp LG(NUMBER_1)  &kp LG(N9)    &kp LG(N8)  &mt LC(LS(T)) LG(R)  &kp LG(T)        &kp LC(PG_UP)                    &mkp MB1                  &mkp MB2                 &kp LC(PAGE_DOWN)  &trans           &trans
+&kp TAB  &kp LG(N7)        &kp LEFT_ALT  &kp LG(D)   &kp CAPS             &kp LG(N8)       &mt HOME LEFT                    &mt PAGE_DOWN DOWN        &mt PG_UP UP_ARROW       &mt END RIGHT      &trans           &trans
+&trans   &kp LEFT_SHIFT    &kp LG(X)     &kp LG(C)   &kp LG(V)            &mt LS(DEL) DEL  &mt LC(PRINTSCREEN) PRINTSCREEN  &mt K_MUTE C_VOLUME_DOWN  &mt K_STOP K_PLAY_PAUSE  &kp C_VOLUME_UP    &kp RIGHT_SHIFT  &trans
+                                         &trans      &trans               &kp LCTRL        &kp RIGHT_ALT                    &mo 3                     &trans
             >;
         };
 
         excl {
             bindings = <
-&trans     &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5     &kp NUMBER_6  &kp N7    &kp N8    &kp NUMBER_9                     &kp NUMBER_0                       &kp MINUS
-&kp PLUS   &kp EXCL           &kp AT        &kp HASH      &kp DLLR       &kp PRCNT  &kp CARET     &kp AMPS  &kp STAR  &mt LEFT_BRACE LEFT_PARENTHESIS  &mt RIGHT_BRACE RIGHT_PARENTHESIS  &kp EQUAL
-&kp EQUAL  &mt LEFT_SHIFT F1  &kp F2        &kp F3        &mt LA(F4) F4  &kp F5     &kp F6        &kp F7    &kp F8    &kp F9                           &mt LA(F10) F10                    &mt F12 F11
-                                            &trans        &mo 3          &kp LCTRL  &kp LEFT_ALT  &trans    &trans
+&trans  &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5     &kp NUMBER_6  &kp N7    &kp N8    &kp NUMBER_9  &kp NUMBER_0     &kp MINUS
+&trans  &kp EXCL           &kp AT        &kp HASH      &kp DLLR       &kp PRCNT  &kp CARET     &kp AMPS  &kp STAR  &parenthesis  &braces          &kp EQUAL
+&trans  &mt LEFT_SHIFT F1  &kp F2        &kp F3        &mt LA(F4) F4  &kp F5     &kp F6        &kp F7    &kp F8    &kp F9        &mt LA(F10) F10  &mt F12 F11
+                                         &trans        &mo 3          &kp LCTRL  &kp LEFT_ALT  &trans    &trans
             >;
         };
 
         adjust_layer {
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &vim_prev_tab  &vim_next_tab  &bt BT_SEL 4               &bt BT_SEL 3                          &bt BT_SEL 2                    &bt BT_SEL 1                 &bt BT_SEL 0  &bt BT_CLR
-&tog 3      &trans        &trans        &trans        &trans         &trans         &mt LS(HOME) LS(LC(LEFT))  &mt LS(PAGE_DOWN) LS(LC(DOWN_ARROW))  &mt LS(PG_UP) LS(LC(UP_ARROW))  &mt LS(PG_UP) LS(LC(RIGHT))  &braces       &double_quotes
+&tog 3      &trans        &trans        &trans        &trans         &trans         &mt LS(HOME) LS(LC(LEFT))  &mt LS(PAGE_DOWN) LS(LC(DOWN_ARROW))  &mt LS(PG_UP) LS(LC(UP_ARROW))  &mt LS(PG_UP) LS(LC(RIGHT))  &trans        &double_quotes
 &none       &trans        &trans        &trans        &trans         &trans         &trans                     &trans                                &trans                          &trans                       &trans        &trans
                                         &trans        &trans         &trans         &trans                     &trans                                &trans
             >;
@@ -139,19 +139,10 @@
 
         numpad {
             bindings = <
-&kp KP_NUM       &kp KP_SLASH     &kp N7        &kp N8        &kp N9        &kp KP_MINUS  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE
-&mt LCTRL EQUAL  &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS   &trans  &trans  &trans  &trans  &trans  &trans
-&none            &kp N0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT    &trans  &trans  &trans  &trans  &trans  &trans
-                                                &kp K_COPY    &to 0         &kp K_PASTE   &trans  &trans  &trans
-            >;
-        };
-
-        game_layer {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp KP_NUM    &kp KP_SLASH     &kp N7        &kp N8        &kp N9        &kp KP_MINUS  &trans  &trans  &trans  &trans  &trans  &kp BACKSPACE
+&kp KP_EQUAL  &kp KP_MULTIPLY  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp KP_PLUS   &trans  &trans  &trans  &trans  &trans  &trans
+&none         &kp N0           &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp KP_DOT    &trans  &trans  &trans  &trans  &trans  &trans
+                                             &kp LC(C)     &to 0         &kp LC(V)     &trans  &trans  &trans
             >;
         };
     };

@@ -119,10 +119,10 @@
 
         pc_layer {
             bindings = <
-&to 4    &kp LG(NUMBER_1)  &kp LG(W)     &kp LG(N9)  &mt LC(LS(T)) LG(R)  &kp LG(T)        &kp LC(PG_UP)                    &mkp MB1                  &mkp MB2                 &kp LC(PAGE_DOWN)  &trans           &trans
-&kp TAB  &kp LG(N7)        &kp LEFT_ALT  &kp LG(D)   &kp CAPS             &kp LG(N8)       &mt HOME LEFT                    &mt PAGE_DOWN DOWN        &mt PG_UP UP_ARROW       &mt END RIGHT      &trans           &trans
-&trans   &kp LEFT_SHIFT    &kp LG(X)     &kp LG(C)   &kp LG(V)            &mt LS(DEL) DEL  &mt LC(PRINTSCREEN) PRINTSCREEN  &mt K_MUTE C_VOLUME_DOWN  &mt K_STOP K_PLAY_PAUSE  &kp C_VOLUME_UP    &kp RIGHT_SHIFT  &trans
-                                         &trans      &trans               &kp LCTRL        &kp RIGHT_ALT                    &mo 3                     &trans
+&to 4    &kp LG(Q)       &kp LG(W)     &kp LG(E)  &mt LC(LS(T)) LG(R)  &kp LG(T)        &kp LC(PG_UP)                    &mkp MB1                  &mkp MB2                 &kp LC(PAGE_DOWN)  &trans           &trans
+&kp TAB  &kp LG(S)       &kp LEFT_ALT  &kp LG(D)  &kp CAPS             &kp LG(G)        &mt HOME LEFT                    &mt PAGE_DOWN DOWN        &mt PG_UP UP_ARROW       &mt END RIGHT      &trans           &trans
+&trans   &kp LEFT_SHIFT  &kp LG(X)     &kp LG(C)  &kp LG(V)            &mt LS(DEL) DEL  &mt LC(PRINTSCREEN) PRINTSCREEN  &mt K_MUTE C_VOLUME_DOWN  &mt K_STOP K_PLAY_PAUSE  &kp C_VOLUME_UP    &kp RIGHT_SHIFT  &trans
+                                       &trans     &trans               &kp LCTRL        &kp RIGHT_ALT                    &mo 3                     &trans
             >;
         };
 

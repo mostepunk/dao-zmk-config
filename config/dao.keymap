@@ -4,10 +4,11 @@
  * SPDX-License-Identifier: MIT
  */
 
+#include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/mouse.h>
+#include <dt-bindings/zmk/pointing.h>
 
 #define DEF 0
 #define LWR 1
@@ -128,18 +129,18 @@
 
         excl {
             bindings = <
-&trans  &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5     &kp NUMBER_6  &kp N7    &kp N8    &kp NUMBER_9  &kp NUMBER_0     &kp MINUS
-&trans  &kp EXCL           &kp AT        &kp HASH      &kp DLLR       &kp PRCNT  &kp CARET     &kp AMPS  &kp STAR  &parenthesis  &braces          &kp EQUAL
-&trans  &mt LEFT_SHIFT F1  &kp F2        &kp F3        &mt LA(F4) F4  &kp F5     &kp F6        &kp F7    &kp F8    &kp F9        &mt LA(F10) F10  &mt F12 F11
+&trans  &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4   &kp N5     &kp NUMBER_6  &kp N7    &kp N8    &kp NUMBER_9  &kp NUMBER_0      &kp MINUS
+&trans  &kp EXCL           &kp AT        &kp HASH      &kp DLLR       &kp PRCNT  &kp CARET     &kp AMPS  &kp STAR  &parenthesis  &square_brackets  &kp EQUAL
+&trans  &mt LEFT_SHIFT F1  &kp F2        &kp F3        &mt LA(F4) F4  &kp F5     &kp F6        &kp F7    &kp F8    &kp F9        &mt LA(F10) F10   &mt F12 F11
                                          &trans        &mo 3          &kp LCTRL  &kp LEFT_ALT  &trans    &trans
             >;
         };
 
         adjust_layer {
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &vim_prev_tab  &vim_next_tab  &trans                     &trans                                &trans                          &bt BT_SEL 1                 &bt BT_SEL 0      &bt BT_CLR
-&tog 3      &trans        &trans        &trans  &trans         &trans         &mt LS(HOME) LS(LC(LEFT))  &mt LS(PAGE_DOWN) LS(LC(DOWN_ARROW))  &mt LS(PG_UP) LS(LC(UP_ARROW))  &mt LS(PG_UP) LS(LC(RIGHT))  &square_brackets  &double_quotes
-&none       &trans        &trans        &trans  &trans         &trans         &trans                     &trans                                &trans                          &trans                       &trans            &trans
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &trans  &vim_prev_tab  &vim_next_tab  &trans                     &trans                                &trans                          &bt BT_SEL 1                 &bt BT_SEL 0  &bt BT_CLR
+&tog 3      &trans        &trans        &trans  &trans         &trans         &mt LS(HOME) LS(LC(LEFT))  &mt LS(PAGE_DOWN) LS(LC(DOWN_ARROW))  &mt LS(PG_UP) LS(LC(UP_ARROW))  &mt LS(PG_UP) LS(LC(RIGHT))  &braces       &double_quotes
+&none       &trans        &trans        &trans  &trans         &trans         &trans                     &trans                                &trans                          &trans                       &trans        &trans
                                         &trans  &trans         &trans         &trans                     &trans                                &trans
             >;
         };
